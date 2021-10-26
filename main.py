@@ -36,7 +36,7 @@ class Auto:
             return "Las piezas no son originales"
     
 
-class motor:
+class Motor:
     def __init__(self,numeroCilindros, tipo, registro):
         self.numeroCilindros=numeroCilindros
         self.tipo=tipo
