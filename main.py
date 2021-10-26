@@ -23,6 +23,7 @@ class Auto:
         for i in self.asientos:
             if i!=None:
                 count+=1
+        return count
     
     def verificarIntegridad(self):
         check=True
