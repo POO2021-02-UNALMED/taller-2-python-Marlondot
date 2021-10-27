@@ -17,18 +17,19 @@ class Auto:
         self.marca=marca
         self.motor=motor
         self.registro=registro
+        Auto.cantidadCreados+=1
     
     def cantidadAsientos(self):
         count=0
         for i in self.asientos:
-            if i!=None:
+            if i is not None:
                 count+=1
         return count
     
     def verificarIntegridad(self):
         check=True
         for i in self.asientos:
-            if i!=None:
+            if i is not None:
                 if self.registro!=i.registro:
                     check=False
         if (check and self.registro==self.motor.registro):
